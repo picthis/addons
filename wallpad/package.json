@@ -1,0 +1,17 @@
+{
+  "name": "my_package",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.2.8",
+    "serialport": "^9.2.8"
+  },
+  "homepage": "https://github.com/monatheoctocat/my_package"
+}
+[출처] Wallpad Controller with RS485 애드온 설치 에러 수정 (HomeAssistant) | 작성자 에헹

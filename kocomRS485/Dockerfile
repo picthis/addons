@@ -7,11 +7,11 @@ ENV LANG C.UTF-8
 COPY run.sh makeconf.sh rs485.py /
 
 # Install requirements for add-on
-RUN apt-get update && apt-get -y install jq
-RUN python3 -m pip install pyserial && \
-        python3 -m pip install paho-mqtt
+RUN apk add --no-cache jq npm make gcc g++ python3 linux-headers udev
 
-WORKDIR /share
+WORKDIR /
+COPY package.json /
+RUN npm install
 
 RUN chmod a+x /makeconf.sh
 RUN chmod a+x /run.sh
